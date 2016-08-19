@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="white">#fffafafa</color>
+    <color name="text_click">#ffff8e01</color>
+    <color name="text_click_pressed">#ffd35001</color>
+    <color name="tab_text">#ffe2e2e2</color>
+    <color name="maintopc">#ffe56281</color>
+    <color name="mainbgc">#ffffffff</color>
+    <color name="mainlinec">#ffe6e6e6</color>
+    <color name="maintoptvc">#ffffffff</color>
+    <color name="mainbgtvc">#ff666666</color>
+    <color name="c_maintagtv">#ff333333</color>
+    <color name="c_fubg">#fff0f0f0</color>
+    <color name="uvv_gray">#ff969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#fff0f0f0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+</resources>

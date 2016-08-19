@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c_fubg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/detail_lin_top" android:background="@color/maintopc" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <ImageView android:id="@id/detail_img_back" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/cool_icon_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/detail_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/re_video" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="202.5dip">
+                <FrameLayout android:id="@id/video_layout" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="202.5dip">
+                    <com.hz.boom.view.videoview.BM_VideoView android:layout_gravity="center" android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <com.hz.boom.view.videoview.BM_MediaController android:id="@id/media_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <ImageView android:id="@id/detail_img_ks" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:background="#800f0f0f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/video_detail_lin_mc" android:paddingLeft="2.0dip" android:paddingTop="7.0dip" android:paddingRight="2.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/video_play_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/cool_icon_vedio_paly" />
+                        <Chronometer android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:format="%s" />
+                        <ProgressBar android:id="@id/time_progress" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:max="200" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/cool_progressbar_mini" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/video_all_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="00:56" />
+                        <ImageView android:id="@id/detail_img_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/cool_icon_vedio_fullscreen" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:id="@id/detail_img_vp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cool_icon_detail_paly" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ProgressBar android:id="@id/jiazai_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Inverse" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/detail_lin_bom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/detail_tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="简介:" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/detail_tv_Introduction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:text="简介:" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/coool_detail_jd_re" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_go_detail_jd" android:background="@drawable/cool_press_button_cheng" android:layout_width="55.0dip" android:layout_height="25.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="5.0dip" android:text="查看" android:layout_alignParentRight="true" />
+                    <ImageView android:id="@id/img_icon_detail_jd" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/cool_icon_head" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff454545" android:id="@id/tv_name_detail_jd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/img_icon_detail_jd" android:layout_alignTop="@id/img_icon_detail_jd" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:id="@id/tv_ms_detail_jd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="65.0dip" android:singleLine="true" android:layout_below="@id/tv_name_detail_jd" android:layout_alignLeft="@id/tv_name_detail_jd" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+                    <include layout="@layout/fa_item_home_grid" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                        <TextView android:background="@color/maintopc" android:layout_width="3.0dip" android:layout_height="15.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/c_maintagtv" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="热门评论" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                        <com.hz.boom.view.BM_CustomListView android:id="@id/item_discuss_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/mainlinec" android:dividerHeight="1.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

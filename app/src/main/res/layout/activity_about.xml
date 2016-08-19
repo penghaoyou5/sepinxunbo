@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/maintopc" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <ImageView android:layout_gravity="center" android:id="@id/back" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/cool_icon_back" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/actionbar_tvsize" android:textColor="@color/maintoptvc" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="关于我们" android:layout_weight="4.0" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@drawable/cool_icon_logo" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="50.0dip">
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="版本介绍" />
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center|right" android:id="@id/version_code" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginRight="15.0dip" android:text="2.8" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="客服" />
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center|right" android:id="@id/about_tv_qq" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginRight="15.0dip" android:text="\ 0000000000" android:layout_weight="1.5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="客服" />
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center|right" android:id="@id/about_tv_weixin" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginRight="15.0dip" android:text="\ 0000000000" android:layout_weight="1.5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="25.0dip">
+            <TextView android:textColor="#ffbb5f52" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="官网" />
+            <View android:background="#ffbb5f52" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+            <TextView android:textColor="#ffbb5f52" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="服务条款" />
+            <View android:background="#ffbb5f52" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+            <TextView android:textColor="#ffbb5f52" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="微博" />
+        </LinearLayout>
+        <TextView android:textColor="#ff5b5b5b" android:gravity="center" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="Copyright@2015-2015 Vfc.All Right" />
+    </LinearLayout>
+</LinearLayout>

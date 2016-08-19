@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="343.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/pay_bj_iv" android:layout_width="fill_parent" android:layout_height="225.32999dip" android:scaleType="fitXY" />
+        <TextView android:textColor="#ff333333" android:gravity="center|left" android:background="#ffcccccc" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="选择支付方式" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dp_lin_weixin" android:background="@drawable/cool_press_lin_bai" android:layout_width="fill_parent" android:layout_height="48.329987dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/cool_icon_weixin" />
+            <TextView android:textColor="#ffbebebe" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="微信支付" android:layout_weight="3.0" />
+            <RadioButton android:layout_gravity="center" android:id="@id/dp_rb_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:checked="true" />
+        </LinearLayout>
+        <View android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dp_lin_alipay" android:background="@drawable/cool_press_lin_bai" android:layout_width="fill_parent" android:layout_height="48.329987dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/cool_icon_alipay" />
+            <TextView android:textColor="#ffbebebe" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="支付宝支付" android:layout_weight="3.0" />
+            <RadioButton android:layout_gravity="center" android:id="@id/dp_rb_alipay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <View android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="23.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dp_button_left" android:background="@drawable/cool_press_button_red" android:layout_width="136.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="包月(49元)" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dp_button_right" android:background="@drawable/cool_press_button_red" android:layout_width="136.0dip" android:layout_height="40.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="20.0dip" android:text="终身(69元)" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
